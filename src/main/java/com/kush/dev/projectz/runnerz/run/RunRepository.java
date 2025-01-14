@@ -46,7 +46,7 @@ public class RunRepository {
 
     public void delete(Integer id) {
         int updated = jdbcClient.sql("DELETE FROM Run WHERE id = :id")
-                .params(List.of(id).toString())
+                .param("id", id)
                 .update();
         Assert.state(updated == 1, "Failed to delete run: " + id);
     }
