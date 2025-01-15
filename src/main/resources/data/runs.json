@@ -1,0 +1,36 @@
+{
+  "runs": [
+    {
+      "id": 1,
+      "title": "First Run",
+      "startedOn": "2025-01-15T09:40:59.680019",
+      "completedOn": "2025-01-15T10:40:59.680024",
+      "miles": 5,
+      "location": "OUTDOOR"
+    },
+    {
+      "id": 2,
+      "title": "Second Run",
+      "startedOn": "2025-01-16T09:40:59.680019",
+      "completedOn": "2025-01-16T10:40:59.680024",
+      "miles": 5,
+      "location": "INDOOR"
+    },
+    {
+      "id": 3,
+      "title": "Third Run",
+      "startedOn": "2025-01-17T09:40:59.680019",
+      "completedOn": "2025-01-17T10:40:59.680024",
+      "miles": 6,
+      "location": "INDOOR"
+    },
+    {
+      "id": 4,
+      "title": "Fourth Run",
+      "startedOn": "2025-01-18T09:40:59.680019",
+      "completedOn": "2025-01-18T10:40:59.680024",
+      "miles": 6,
+      "location": "OUTDOOR"
+    }
+  ]
+}

@@ -2,6 +2,7 @@ package com.kush.dev.projectz.runnerz;
 
 import com.kush.dev.projectz.runnerz.run.Location;
 import com.kush.dev.projectz.runnerz.run.Run;
+import com.kush.dev.projectz.runnerz.run.RunRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -22,12 +23,13 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-	@Bean
-	CommandLineRunner runner(){
-		return args -> {
-			log.info("Application Started");
-			Run run = new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plusHours(1), 5, Location.OUTDOOR);
-			log.info("Run: {}", run);
-		};
-	}
+//	Commented as ran from Json Data loader now
+//	@Bean
+//	CommandLineRunner runner(RunRepository runRepository){
+//		return args -> {
+//			log.info("Application Started");
+//			Run run = new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plusHours(1), 5, Location.OUTDOOR);
+//			runRepository.create(run);
+//		};
+//	}
 }
