@@ -1,12 +1,12 @@
 package com.kush.dev.projectz.runnerz.user;
 
 import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.client.JdkClientHttpRequestFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
 
 import java.util.List;
 
+// This class is not used and instead the UserHttpClient interface is used via Spring
 @Component
 public class UserRestClient {
 
