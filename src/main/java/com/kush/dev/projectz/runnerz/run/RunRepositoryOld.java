@@ -19,9 +19,10 @@ public class RunRepositoryOld {
 
     @PostConstruct
     private void init(){
-        runs.add(new Run(1, "First Run", LocalDateTime.now(),  LocalDateTime.now().plusHours(1), 5, Location.OUTDOOR));
-        runs.add(new Run(2, "Second Run", LocalDateTime.now(), LocalDateTime.now().plusMinutes(30), 5, Location.INDOOR));
-        runs.add(new Run(3, "Third Run",  LocalDateTime.now(), LocalDateTime.now().plusMinutes(45), 5, Location.OUTDOOR));
+        // Commented out to avoid conflicts with the new RunRepository
+//        runs.add(new Run(1, "First Run", LocalDateTime.now(),  LocalDateTime.now().plusHours(1), 5, Location.OUTDOOR));
+//        runs.add(new Run(2, "Second Run", LocalDateTime.now(), LocalDateTime.now().plusMinutes(30), 5, Location.INDOOR));
+//        runs.add(new Run(3, "Third Run",  LocalDateTime.now(), LocalDateTime.now().plusMinutes(45), 5, Location.OUTDOOR));
     }
 
     public Optional<Run> findById(Integer id) {

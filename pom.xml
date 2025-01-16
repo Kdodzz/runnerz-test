@@ -52,6 +52,7 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+<!--		Commented out as using docker posgtress instead of in memory h2-->
 <!--		<dependency>-->
 <!--			<groupId>com.h2database</groupId>-->
 <!--			<artifactId>h2</artifactId>-->
@@ -72,6 +73,10 @@
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jdbc</artifactId>
 		</dependency>
 	</dependencies>
 
